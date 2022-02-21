@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 14%;
+    /* position: fixed; */
+    background-image: linear-gradient(to left, white, green);
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+    float: right;
+}
+
+#title {
+    float: right;
+    line-height: 80px;
+    color: black;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+ul {
+    width: 100%;
+    height: 50px;
+    list-style-type: none;
+}
+
+li {
+    float: left;
+    width: 120px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+li a:hover {
+    color: antiquewhite;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+main {
+    width: 100%;
+    height: 74%;
+}
+
+main h1 {
+    clear: both;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+main pre {
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+#card1 {
+    position: relative;
+    width: 230px;
+    height: 260px;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -75%);
+    margin: 20px 20px;
+    float: left;
+}
+
+.card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    /*flip front and back togather*/
+    transition: all 1s ease;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.front1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: #333;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    border-radius: 10%;
+    background-image: url(https://cdn.images.express.co.uk/img/dynamic/25/590x/Package-holidays-Cheap-destinations-953615.jpg);
+    background-size: 100% 100%;
+}
+
+.back1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: rgb(241, 196, 112);
+    color: #333;
+    transform: rotateY(180deg);
+    border-radius: 10%;
+}
+
+.back1 h2, .back2 h2, .back3 h2 {
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.back1 p, .back2 p, .back3 p {
+    text-align: left;
+    font-weight: lighter;
+    margin-left: 7px;
+}
+
+button {
+    width: 80px;
+    height: 40px;
+    border-radius: 10%;
+    top: 30%;
+    left: 70%;
+    transform: translate(75%, -40%);
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 16px;
+    padding: 4px 4px;
+    background-color: rgb(224, 221, 216);
+    border: 0px;
+    cursor: pointer;
+}
+
+button:hover {
+    width: 85px;
+    height: 43px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
+    font-weight: lighter;
+    /* color:rgb(121, 243, 121);  */
+    color: white;
+}
+
+#bg {
+
+
+    background-color: rgb(255, 255, 255, 0.6);
+    width: 90%;
+    height: 90%;
+    border-radius: 10%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.front2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: #333;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    border-radius: 10%;
+    background-image: url(https://media1.popsugar-assets.com/files/thumbor/NiU8Gj-i_HbjlfUgXrRK_jW3MeM/fit-in/550x550/filters:format_auto-!!-:strip_icc-!!-/2018/01/10/765/n/43463692/12a22f695a564bb32c3379.99027066_edit_img_image_44490285_1515603002/i/PicsArt-POPSUGAR-Travel-Challenge-Winners.jpg);
+    background-size: 100% 100%;
+}
+
+.back2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: rgb(77, 217, 241);
+    color: #333;
+    transform: rotateY(180deg);
+    border-radius: 10%;
+}
+
+.front3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: #333;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    border-radius: 10%;
+    background-image: url(https://cdn2.wanderlust.co.uk/media/1115/articles-a-pretty-picture-is-not-enough-it-needs-to-be-original-photo-mike-baird1.jpg?anchor=center&mode=crop&width=1200&height=0&rnd=131455539260000000);
+    background-size: 100% 100%;
+}
+
+.back3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: rgb(121, 243, 121);
+    color: #333;
+    transform: rotateY(180deg);
+    border-radius: 10%;
+}
+
+#con {
+    text-align: center;
+    color: green;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+footer {
+    clear: both;
+    position: fixed;
+    bottom: 12%;
+    transform: translateY(100%);
+    width: 100%;
+    height: 12%;
+    background-color: rgb(224, 221, 216);
+}
+
+#copyright {
+    font-size: 16px;
+    text-align: center;
+}
+
+#box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+#box img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding-bottom: 2px;
+    padding-left: 2px;
+}
+
+#box img:hover {
+    width: 42px;
+    height: 42px;
+    border-bottom: 2px solid green;
+}
+
+@media screen and (min-width:651px) and (max-width:1070px) {}
+
+@media screen and (min-width:500px) and (max-width:651px) {
+    li {
+        width: 70px;
+    }
+}
+
+@media screen and (min-width:890px) and (max-width:1014px) {
+    #card1 {
+        width: 200px;
+        height: 230px;
+    }
+
+    .back1 h2, .back2 h2, .back3 h2 {
+        font-size: 20px;
+    }
+
+    .back1 p, .back2 p, .back3 p {
+        font-size: 14px;
+    }
+
+    button {
+        width: 70px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    button:hover {
+        width: 73px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:890px) {
+    #card1 {
+        width: 100px;
+        height: 130px;
+        transform: translate(-70%, -75%);
+    }
+
+    .back1 h2, .back2 h2, .back3 h2 {
+        font-size: 10px;
+    }
+
+    .back1 p, .back2 p, .back3 p {
+        font-size: 7px;
+    }
+
+    button {
+        width: 30px;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    button:hover {
+        width: 33px;
+        height: 23px;
+        font-size: 10px;
+    }
+
+    main pre {
+        font-size: 16px;
+    }
+   li a:hover{
+    font-size: 18px;
+    }
+
+}
